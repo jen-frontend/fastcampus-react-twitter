@@ -11,8 +11,6 @@ export default function PostForm() {
   const { user } = useContext(AuthContext);
   const handleFileUpload = () => {};
 
-  console.log(user);
-
   const onSubmit = async (e: any) => {
     e.preventDefault();
 
