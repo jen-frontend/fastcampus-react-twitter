@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "baseUrl": "src",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -17,10 +20,7 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src"],
-  "paths": {
-    "pages/*": ["pages/*"],
-    "components/*": ["components/*"],
-    "firebaseApp/*": ["firebaseApp/*"]
-  }
+  "include": [
+    "src"
+  ]
 }
