@@ -317,4 +317,28 @@ body {
   &__error {
     color: red;
   }
+
+  &__btn--google {
+    @extend .form__btn--submit;
+    background-color: $white;
+    color: $activeBorder;
+
+    &:hover,
+    &:focus {
+      background-color: $activeBorder;
+      color: $white;
+    }
+  }
+
+  &__btn--github {
+    @extend .form__btn--submit;
+    background-color: black;
+    color: white;
+
+    &:hover,
+    &:focus {
+      background-color: $activeBg;
+      color: $white;
+    }
+  }
 }
