@@ -45,6 +45,10 @@ body {
   border: none;
   cursor: pointer;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+  &:disabled {
+    opacity: 0.5;
+  }
 }
 
 .transparent {
