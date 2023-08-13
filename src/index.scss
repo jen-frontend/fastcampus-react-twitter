@@ -133,6 +133,44 @@ body {
 }
 
 .post-form {
+  &__input {
+    font-family: $font;
+    padding: 8px;
+    border: none;
+    resize: none;
+    outline: none;
+    margin-top: 8px;
+    width: calc(100% - 32px);
+  }
+
+  &__hashtags {
+    padding: 16px;
+    border-bottom: 1px solid $border;
+
+    &-outputs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 1px;
+      align-items: center;
+    }
+
+    &-tag {
+      font-size: 14px;
+      border: 1px solid $primaryColor;
+      color: $primaryColor;
+      border-radius: 10px;
+      padding: 2px 8px;
+      margin-right: 6px;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        color: $activeBorder;
+        border: 1px solid $activeBorder;
+      }
+    }
+  }
+
   &__textarea {
     font-family: $font;
     min-height: 120px;
