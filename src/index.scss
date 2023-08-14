@@ -79,7 +79,7 @@ body {
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     background-color: transparent;
 
     button {
@@ -92,6 +92,11 @@ body {
       background-color: transparent;
       padding: 16px 0px;
       backdrop-filter: blur(10px);
+
+      svg {
+        backdrop-filter: blur(10px);
+        background-color: transparent;
+      }
     }
   }
 }
