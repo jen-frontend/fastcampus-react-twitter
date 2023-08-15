@@ -1,4 +1,4 @@
-import { doc, getDoc, onSnapshot } from "firebase/firestore";
+import { doc, onSnapshot } from "firebase/firestore";
 
 import Loader from "components/loader/Loader";
 import PostBox from "components/posts/PostBox";
