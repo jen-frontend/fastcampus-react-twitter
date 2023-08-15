@@ -8,35 +8,38 @@ import { getAuth, signOut } from "firebase/auth";
 import { app } from "firebaseApp";
 import { AiOutlineSearch } from "react-icons/ai";
 import { IoMdNotificationsOutline } from "react-icons/io";
+import useTranslation from "hooks/useTranslation";
 
 import { toast } from "react-toastify";
 
 export default function MenuList() {
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
+  const t = useTranslation();
+
   return (
     <div className="footer">
       <div className="footer__grid">
         <button type="button" onClick={() => navigate("/")}>
           <BsHouse />
-          Home
+          {t("MENU_HOME")}
         </button>
         <button type="button" onClick={() => navigate("/profile")}>
           <BiUserCircle />
-          Profile
+          {t("MENU_PROFILE")}
         </button>
         <button type="button" onClick={() => navigate("/search")}>
           <AiOutlineSearch />
-          Search
+          {t("MENU_SEARCH")}
         </button>
         <button type="button" onClick={() => navigate("/notifications")}>
           <IoMdNotificationsOutline />
-          Notification
+          {t("MENU_NOTI")}
         </button>
         {user === null ? (
           <button type="button" onClick={() => navigate("/users/login")}>
             <MdLogin />
-            Login
+            {t("MENU_LOGIN")}
           </button>
         ) : (
           <button
@@ -48,7 +51,7 @@ export default function MenuList() {
             }}
           >
             <MdLogout />
-            Logout
+            {t("MENU_LOGOUT")}
           </button>
         )}
       </div>
