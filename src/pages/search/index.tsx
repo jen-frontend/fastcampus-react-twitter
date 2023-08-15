@@ -52,7 +52,7 @@ export default function SearchPage() {
         <div className="home__search-div">
           <input
             className="home__search"
-            placeholder="해시태그 검색"
+            placeholder={t("SEARCH_HASHTAGS")}
             onChange={onChange}
           />
         </div>

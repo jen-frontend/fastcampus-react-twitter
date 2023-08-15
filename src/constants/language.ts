@@ -96,6 +96,11 @@ const TRANSLATIONS = {
     ko: "해시태그 검색",
     en: "Search Hashtags",
   },
+  // profile
+  PROFILE_NAME: {
+    ko: "사용자님",
+    en: "User",
+  },
   // notification
   NO_NOTIFICATIONS: {
     ko: "알림이 없습니다",
