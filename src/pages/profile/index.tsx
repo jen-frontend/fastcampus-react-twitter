@@ -96,7 +96,9 @@ export default function ProfilePage() {
           </div>
         </div>
         <div className="profile__text">
-          <div className="profile__name">{user?.displayName || "사용자님"}</div>
+          <div className="profile__name">
+            {user?.displayName || t("PROFILE_NAME")}
+          </div>
           <div className="profile__email">{user?.email}</div>
         </div>
         <div className="home__tabs">
